@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Didi 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating decorations -->
+    <div class="floating">
+        ♡ ✦ ♡ ✿ ♡ ✦ ♡
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="badge">
+            ✨ A Little Surprise For You ✨
+        </div>
+
+        <h1>
+            Happy Birthday<br>
+            <span>Didi! 🎂💗</span>
+        </h1>
+
+        <p>
+            Today is a special day because someone very special was born. 🌸
+        </p>
+
+        <button onclick="openSurprise()">
+            Open Your Surprise 🎁
+        </button>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <section id="surprise" class="hidden">
+
+        <!-- PHOTO SECTION -->
+        <section class="photos">
+
+            <h2>Some Beautiful Memories 📸</h2>
+
+            <div class="photo-container">
+
+                <div class="photo-card">
+                    <img src="./rimjhim1.jpeg" alt="Didi Photo 1">
+                    <p>Beautiful as always 💕</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="./rimjhim2.jpeg" alt="Didi Photo 2">
+                    <p>Another beautiful memory 🌸</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BIRTHDAY NOTE -->
+        <section class="note">
+
+            <div class="tape"></div>
+
+            <h2>💌 A Note For You</h2>
+
+            <p>
+                Dear Didi,
+                <br><br>
+
+                Happy Birthday! 🎂💗
+                I hope your special day is filled with happiness,
+                laughter and lots of beautiful memories.
+
+                <br><br>
+
+                Thank you for always being such an amazing sister.
+                May you always keep smiling and may this new year of
+                your life bring you lots of success, happiness and peace.
+
+                <br><br>
+
+                You deserve all the happiness in the world. 🌷✨
+
+            </p>
+
+            <p class="signature">
+                — Your annoying but lovable brother 😌❤️
+            </p>
+
+        </section>
+
+
+        <!-- WISH CARDS -->
+        <section class="cards">
+
+            <div class="card">
+                <div class="emoji">🌷</div>
+
+                <h3>Birthday Wish</h3>
+
+                <p>
+                    May your life always be filled with happiness,
+                    success, love and beautiful moments.
+                </p>
+            </div>
+
+
+            <div class="card">
+
+                <div class="emoji">🎀</div>
+
+                <h3>Special Reminder</h3>
+
+                <p>
+                    Never forget how special and amazing you are.
+                    Keep smiling and keep shining!
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="emoji">✨</div>
+
+                <h3>One More Thing</h3>
+
+                <p>
+                    Your birthday surprise isn't complete yet...
+                    because I have one VERY important question. 👀
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARTY SECTION -->
+        <section class="party">
+
+            <div class="party-emoji">
+                🥳
+            </div>
+
+            <h2>
+                Okay Didi... Important Question!
+            </h2>
+
+            <p>
+                Birthday celebration ke liye party kab de rahi ho? 👀🍕
+            </p>
+
+            <div class="buttons">
+
+                <button
+                    class="yes"
+                    onclick="partyYes()">
+                    YES! 🎉
+                </button>
+
+                <button
+                    class="no"
+                    onclick="partyNo()">
+                    NO 😭
+                </button>
+
+            </div>
+
+            <p
+                id="partyMessage"
+                class="party-message">
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <!-- CONFETTI -->
+    <div id="confetti"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

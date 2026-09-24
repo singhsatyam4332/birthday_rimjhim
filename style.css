@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #5b3a4b;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #fce4ec,
+            #eadcff
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+.badge {
+
+    background: white;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    color: #b65d82;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(120,70,100,.12);
+
+}
+
+
+h1 {
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(50px, 8vw, 90px);
+
+    line-height: 1.05;
+
+    color: #8e4567;
+
+}
+
+
+h1 span {
+
+    color: #b85c86;
+
+}
+
+
+.hero p {
+
+    margin: 25px 0;
+
+    font-size: 18px;
+
+    color: #76596b;
+
+}
+
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: .25s;
+
+}
+
+
+.hero button {
+
+    padding: 15px 30px;
+
+    border-radius: 50px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d875a0,
+            #a875cf
+        );
+
+    box-shadow:
+        0 10px 25px rgba(168,117,207,.3);
+
+}
+
+
+.hero button:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+/* HIDDEN */
+
+.hidden {
+
+    display: none;
+
+}
+
+
+/* PHOTO SECTION */
+
+.photos {
+
+    padding: 70px 7%;
+
+    text-align: center;
+
+}
+
+
+.photos h2 {
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 40px;
+
+    color: #914b70;
+
+    margin-bottom: 35px;
+
+}
+
+
+.photo-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.photo-card {
+
+    width: 300px;
+
+    padding: 12px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(120,70,100,.15);
+
+    transition: .3s;
+
+}
+
+
+.photo-card:hover {
+
+    transform: translateY(-10px) rotate(1deg);
+
+}
+
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+}
+
+
+.photo-card p {
+
+    padding: 15px 5px 8px;
+
+    color: #9a5978;
+
+    font-weight: 600;
+
+}
+
+
+/* NOTE */
+
+.note {
+
+    position: relative;
+
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    padding: 60px 50px;
+
+    background: #fffafc;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 50px rgba(120,70,100,.13);
+
+}
+
+
+.tape {
+
+    position: absolute;
+
+    width: 110px;
+
+    height: 30px;
+
+    background: #f2c3d2;
+
+    top: -12px;
+
+    left: 50%;
+
+    transform: translateX(-50%) rotate(2deg);
+
+}
+
+
+.note h2 {
+
+    font-family: 'DM Serif Display', serif;
+
+    color: #a24f75;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.note p {
+
+    line-height: 1.9;
+
+}
+
+
+.signature {
+
+    text-align: right;
+
+    color: #b85d84;
+
+    font-weight: 600;
+
+    margin-top: 20px;
+
+}
+
+
+/* CARDS */
+
+.cards {
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.card {
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.75);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(120,70,100,.1);
+
+}
+
+
+.emoji {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card h3 {
+
+    color: #934d70;
+
+    margin-bottom: 10px;
+
+}
+
+
+.card p {
+
+    color: #755c6b;
+
+    line-height: 1.7;
+
+}
+
+
+/* PARTY */
+
+.party {
+
+    max-width: 850px;
+
+    margin: 30px auto 80px;
+
+    padding: 45px 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff4f8,
+            #f2eaff
+        );
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 15px 50px rgba(120,70,100,.13);
+
+}
+
+
+.party-emoji {
+
+    font-size: 50px;
+
+}
+
+
+.party h2 {
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 38px;
+
+    color: #8f4e70;
+
+    margin: 10px 0;
+
+}
+
+
+.party p {
+
+    color: #765c6b;
+
+}
+
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.yes,
+.no {
+
+    padding: 14px 25px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+}
+
+
+.yes {
+
+    background: #d975a0;
+
+    color: white;
+
+}
+
+
+.no {
+
+    background: white;
+
+    color: #9b627d;
+
+    border: 1px solid #edc9d9;
+
+}
+
+
+.yes:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+.no:hover {
+
+    transform: translateX(10px);
+
+}
+
+
+.party-message {
+
+    margin-top: 20px;
+
+    min-height: 25px;
+
+    color: #a34e76 !important;
+
+    font-weight: 600;
+
+}
+
+
+/* FLOATING DECORATION */
+
+.floating {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    color: rgba(180,90,135,.2);
+
+    font-size: 30px;
+
+    word-spacing: 80px;
+
+    line-height: 120px;
+
+}
+
+
+/* CONFETTI */
+
+.confetti-piece {
+
+    position: fixed;
+
+    top: -20px;
+
+    width: 9px;
+
+    height: 14px;
+
+    animation: fall 2.2s linear forwards;
+
+    z-index: 100;
+
+}
+
+
+@keyframes fall {
+
+    to {
+
+        transform:
+            translateY(105vh)
+            rotate(720deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px) {
+
+    h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .note {
+
+        margin: 20px;
+
+        padding: 45px 25px;
+
+    }
+
+
+    .photos {
+
+        padding: 50px 20px;
+
+    }
+
+
+    .party {
+
+        margin-left: 20px;
+
+        margin-right: 20px;
+
+    }
+
+}
